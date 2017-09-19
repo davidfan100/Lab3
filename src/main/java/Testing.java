@@ -33,9 +33,10 @@ public class Testing {
         int counter = 0;
         while (scan1.hasNext()) {
             String s = scan1.next();
-            s = s.replaceAll(",?;", "");
-            //Remove punctuation
+            s = s.replaceAll(",", "");
+            s = s.replaceAll(".", "")//Remove punctuation
             s = s.toLowerCase();
+            System.out.println(s);
             if (s.equals(word)) {
                 counter++;
             }
